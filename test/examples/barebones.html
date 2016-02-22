@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Barebones</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/stJoseph.css">
+
+		<script src="js/timer.js"></script>
+
+
+
+	</head>
+
+	<body onload='timer=setInterval("countUP()", 1000 );'>
+
+		<div class="reveal">
+
+		<div class="count"><span id="timer_container">0</span><div class="split"></div><span id="full">60</span></div>
+	    <div class="slides">
+
+			<div class="slides">
+
+
+		<section data-background="#ff2400">
+			<h1>Part I:</h1>
+			<h1>Orientalisms</h1>
+		</section>
+
+		<section data-background-video="assets/TURANDOT-video.mp4" data-background-video-loop>
+			<audio data-autoplay data-ignore loop id="turandot-audio"><source src="assets/TURANDOT-audio.mp3"></audio>
+				
+			<div class="dutch">
+				<img src="assets/450019599.jpg" alt="Dutch Blackface">  
+			</div>
+
+			<figure class="test">
+				<p style="color:#fff; margin-top:0;">Puccini's <span class="titles">Turandot</span>,<br /> Met Opera, 2012</p>
+
+			<figure class="fragment">
+				<video data-autoplay src="assets/Verdi_Otello.mp4" muted></video>
+				<p style="color:#fff; margin-top:0;">Verdi's <span class="titles">Otello</span>,<br />Met Opera, 1994</p>
+			</figure>		   				
+		</section>
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize();
+
+		</script>
+
+	</body>
+</html>
