@@ -493,6 +493,7 @@ div.dia_text {
   text-align:center;
 
 }
+<<<<<<< HEAD
 
 
 
@@ -500,6 +501,8 @@ div.dia_text {
 
 
 
+=======
+>>>>>>> Jas
 
 
 /*------------------------------ PART 3 - specificity -----------------------------------------*/
@@ -507,12 +510,15 @@ div.dia_text {
 #divine-king{
   position:absolute;
 }
+<<<<<<< HEAD
 
 #cancan{
   position:absolute;
   left:45%;
   top:-20%;
 }
+=======
+>>>>>>> Jas
  
 span.dia_dates {
   float:left;
@@ -531,6 +537,13 @@ span.dia_dates img {
   padding-top:0 !important;
 }
 
+img.desk {
+  position:absolute;
+  bottom:-2%;
+  z-index:9999;
+  left:0;
+}
+
 div.dia_columns {
   float:left;
   width:100%;
@@ -547,6 +560,13 @@ div.dia_tri {
   width:33%;
   font-size:.5em;
   font-family:sans-serif;
+}
+
+video.fullOne {
+  float:left;
+  opacity:.3;
+  width:89%;
+  margin-left:3%;
 }
 
 .red {
