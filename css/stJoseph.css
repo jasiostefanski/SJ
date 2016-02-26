@@ -441,7 +441,7 @@ h1.flashing-2 {
   position:relative;
 }
 
-<<<<<<< HEAD
+
 /*------------------------------ DIAGRAMS -----------------------------------------*/
 
 html.someclass {
@@ -493,12 +493,28 @@ div.dia_text {
   text-align:center;
 
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> bo
 
 
 /*------------------------------ PART 3 - specificity -----------------------------------------*/
 
 #divine-king{
   position:absolute;
+}
+
+#cancan{
+  position:absolute;
+  left:45%;
+  top:-20%;
 }
  
 span.dia_dates {
