@@ -223,7 +223,7 @@ line-height:1.2;
 }
 
 .reveal section img {
-  margin: 15px 0px;
+  margin: 0px 0px;
 }
 
 .reveal img,
@@ -441,6 +441,7 @@ h1.flashing-2 {
   position:relative;
 }
 
+<<<<<<< HEAD
 /*------------------------------ DIAGRAMS -----------------------------------------*/
 
 html.someclass {
@@ -492,6 +493,23 @@ div.dia_text {
   text-align:center;
 
 }
+=======
+
+
+
+
+
+
+
+
+
+/*------------------------------ PART 3 - specificity -----------------------------------------*/
+
+#divine-king{
+  position:absolute;
+}
+
+>>>>>>> origin/Jas
  
 span.dia_dates {
   float:left;
