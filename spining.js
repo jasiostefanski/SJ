@@ -1,64 +1,85 @@
-var imagePaths = [
-  "1.jpeg","2.jpeg",
-  "3.jpeg","4.jpeg",
-  "5.png","6.jpeg","7.jpeg",
-  "8.jpeg","9.jpeg","10.jpeg"
-];
+// var angle = 0;
+// var angleSpeed = Math.PI/180;
+// var radius = 200;
+// var centerX = 300;
+// var centerY = 300;
+// var x;
+// var y;
 
-  cancanvas = createCanvas(960, 700);  // Size must be the first statement
-  cancanvas.parent('cancan');
+// var alpha = 255;
+// var alphaDelta = 10;
 
-var can  = cancanvas;
-    ctx  = can.getContext('2d');
-    amount = 0;
-    loadedImages = []; 
+// function setup() {
+//   var myCanv = createCanvas(960, 700);  // Size must be the first statement
+//   myCanv.parent('cancan');
+//   stroke(255);     // Set line drawing color to white
+//   frameRate(30);
+// }
 
-imagePaths.forEach(function(path){
-  var img = new Image;
-  img.onload = function(){
-    loadedImages.push(img);
+// function draw() {
+//   background(255,255,255,90);
+//   circulate();
+//   fill(255,255,0,127);
+//   rect(x,y,120,150);
+
+// }
+
+// function circulate() {
+//   translate(centerX,centerY);
+//   x = radius*cos(angle);
+//   y = radius*sin(angle);
+//   if(angle>360) angle = 0;
+//   angle = angle+angleSpeed;
+// }
+
+var img = [];
+var centerX;
+var centerY;
+
+function setup() {
+  var myCanv = createCanvas(960, 700);  // Size must be the first statement
+  myCanv.parent('cancan');
+  //create img object
+  for (var i=0; i<50; i++){
+    img.push(new Thing());
   }
-  // Simulate really slow loading of images
-  setTimeout(function(){
-    img.src = 'assets/'+path;
-  },Math.random()*10000);
-});
+  frameRate(30);
+}
 
-Math.TAU = Math.PI*2; // http://tauday.com/
-
-setInterval(function(){ animateInCircle(ctx,loadedImages) }, 30);
-var timer;
-
-// Dynamically resize the canvas to be its CSS displayed size
-(window.onresize = function(){
-  can.width  = can.offsetWidth;
-  can.height = can.offsetHeight;
-})();
-
-
-function animateInCircle(ctx,images){
-  ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
-  var cx = ctx.canvas.width/2,
-      cy = ctx.canvas.height/2;
-
-  // Don't let the circle be smaller than the largest image
-  var maxDim = Math.max.apply(Math,images.map(function(img){
-    return Math.max(img.width,img.height);
-  }));
-  var radius = Math.max( estimateCircumference()/Math.TAU, maxDim/2 );
-
-  var angleOffset = Math.TAU/images.length;
-  images.forEach(function(img,i){
-    var x = radius*Math.cos(angleOffset*i - (new Date)/5000 );
-    var y = radius*Math.sin(angleOffset*i - (new Date)/5000 );
-    ctx.drawImage(img,cx+x-img.width/2,cy+y-img.height/2);
-  });
-
-  function estimateCircumference(){
-    var c = 0;
-    // images.forEach(function(img){
-    //   c += Math.sqrt(img.width*img.width+img.height*img.height);
-    // })
-    return c;
+function draw(){
+  background(255,255,255);
+  for (var i=0; i<img.length; i++){
+    img[i].circulate();
+    img[i].display();
   }
 }
+
+// Thing class
+function Thing(){
+  centerX=random(280,320);
+  centerY=random(280,320);
+  this.angle=0;
+  this.angleSpeed=Math.PI/180 * random(1,3);
+  this.radius=random(100,250);
+
+  this.circulate = function(){
+    push();
+    translate(centerX,centerY);
+    this.x = this.radius * cos(this.angle);
+    this.y = this.radius * sin(this.angle);
+    if (this.angle >= 360) this.angle = 0;
+    this.angle = this.angle + this.angleSpeed;
+  }
+
+  this.display = function(){
+    fill(255,255,0);
+    rect(this.x,this.y,120,150);
+    pop();
+  }
+}
+
+
+
+
+
+

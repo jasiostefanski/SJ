@@ -43,7 +43,7 @@ function setup() {
 // sequence and after the last line is read, the first 
 // line is executed again.
 function draw() { 
-  background('#ff2400');   // Set the background to red
+  background(255,36,0,127);   // Set the background to red
   move();
   for (i=0;i<10;i++){
     imageMode(CENTER);

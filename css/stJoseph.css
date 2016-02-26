@@ -507,6 +507,12 @@ div.dia_text {
 #divine-king{
   position:absolute;
 }
+
+#cancan{
+  position:absolute;
+  left:45%;
+  top:-20%;
+}
  
 span.dia_dates {
   float:left;
