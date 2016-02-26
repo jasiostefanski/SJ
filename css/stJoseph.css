@@ -223,7 +223,7 @@ line-height:1.2;
 }
 
 .reveal section img {
-  margin: 15px 0px;
+  margin: 0px 0px;
 }
 
 .reveal img,
@@ -439,6 +439,21 @@ h1.flashing-2 {
   z-index:100;
   height:700px;
   position:relative;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------ PART 3 - specificity -----------------------------------------*/
+
+#divine-king{
+  position:absolute;
 }
 
  
