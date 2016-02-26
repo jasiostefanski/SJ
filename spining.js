@@ -1,12 +1,15 @@
 var imagePaths = [
-  "1.jpeg","4.jpeg",
-  "5.jpeg","8.jpeg",
-  "9.png","10.jpeg","12.jpeg",
-  "13.jpeg","14.png"
+  "1.jpeg","2.jpeg",
+  "3.jpeg","4.jpeg",
+  "5.png","6.jpeg","7.jpeg",
+  "8.jpeg","9.jpeg","10.jpeg"
 ];
 
-var can  = document.querySelector('canvas'),
-    ctx  = can.getContext('2d'),
+  cancanvas = createCanvas(960, 700);  // Size must be the first statement
+  cancanvas.parent('cancan');
+
+var can  = cancanvas;
+    ctx  = can.getContext('2d');
     amount = 0;
     loadedImages = []; 
 
@@ -23,17 +26,8 @@ imagePaths.forEach(function(path){
 
 Math.TAU = Math.PI*2; // http://tauday.com/
 
-// setInterval(function(){ animateInCircle(ctx,loadedImages) }, 30);
+setInterval(function(){ animateInCircle(ctx,loadedImages) }, 30);
 var timer;
-$("body").mouseup(function(){
-	timer = setInterval(function(){ animateInCircle(ctx,loadedImages) }, 30);
-});
-
-$("body").mousedown(function(){
-	var number = Math.floor(Math.random()*9);
-		ctx.drawImage(loadedImages[number],0,0);
-	clearInterval(timer);
-});
 
 // Dynamically resize the canvas to be its CSS displayed size
 (window.onresize = function(){
