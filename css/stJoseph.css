@@ -441,6 +441,59 @@ h1.flashing-2 {
   position:relative;
 }
 
+<<<<<<< HEAD
+/*------------------------------ DIAGRAMS -----------------------------------------*/
+
+html.someclass {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffdb28+0,ff9e28+23,0200b2+100 */
+background: #ffdb28; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #ffdb28 0%, #ff9e28 23%, #0200b2 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #ffdb28 0%,#ff9e28 23%,#0200b2 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #ffdb28 0%,#ff9e28 23%,#0200b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdb28', endColorstr='#0200b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+div.branches {
+  float:left;
+  position:relative;
+  border-top:3px solid #fff;
+  width:600px;
+  height:100px;
+  border-left:3px solid #fff;
+  border-right:3px solid #fff;
+  margin-top:40px;
+  margin-left:170px;
+}
+
+div.branch_indy {
+  float:left;
+  margin-left:50%;
+  margin-top:-2%;
+  height:110%;
+  border-left:3px solid #fff;
+}
+
+h2.dia_title {
+  font-family:sans-serif;
+  font-weight:bold;
+  color:brown;
+}
+
+div.dia_text {
+  position:absolute !important;
+  left:0;
+  background:#000;
+  color:rgb(255,255,255);
+  text-align:left;
+  font-size:.5em;
+  width:39%;
+  margin-left:-19%;
+  bottom:0;
+  font-family:sans-serif;
+  text-align:center;
+
+}
+=======
 
 
 
@@ -456,8 +509,130 @@ h1.flashing-2 {
   position:absolute;
 }
 
+>>>>>>> origin/Jas
  
+span.dia_dates {
+  float:left;
+  display:inline-block;
+  width:100%;
+  top:0 !important;
+  margin-top:0 !important;
+  padding-top:0 !important;
+  color:rgb(255,255,255);
+}
 
+span.dia_dates img {
+  max-width:20%;
+  top:0 !important;
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+
+div.dia_columns {
+  float:left;
+  width:100%;
+    color:rgb(255,255,255);
+
+}
+
+div.bump_top {
+    margin-top:4%;
+}
+
+div.dia_tri {
+  float:left;
+  width:33%;
+  font-size:.5em;
+  font-family:sans-serif;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+}
+
+div.branchesTwo {
+  float:left;
+  position:relative;
+  width:600px;
+  height:150px;
+  margin-top:1%;
+  border-left:3px solid #fff;
+  border-right:3px solid #fff;
+  margin-left:170px;
+}
+
+div.branch_indyTwo {
+  float:left;
+  margin-left:50%;
+  height:100%;
+  border-left:3px solid #fff;
+}
+
+div.branch_indyTwo p {
+  float:left;
+  margin-left:15%;
+  margin-top:5%;
+  color:#fff;
+  font-size:.8rem;
+  line-height:1.2rem;
+  font-family:sans-serif;
+  max-width:70%;
+}
+
+div.dia_call {
+  float:left;
+  width:33%;
+  margin-top:1%;
+  font-size:.8em;
+  line-height:1.2em;
+  font-family:sans-serif;
+  font-weight:bolder;
+  color:rgb(255,255,0);
+  text-transform: uppercase;
+}
+span.dia_call_desc {
+  font-size:.5em;
+  line-height:1.2em;
+  margin-top:20px;
+  float:left;
+  width:100%;
+  display:inline-block;
+  font-weight:normal;
+  text-transform:lowercase;
+}
+
+video.full {
+  float:left;
+  opacity:.3;
+}
+
+div.video_fade {
+  position:relative;
+  float:left;
+  top:-170px;
+  z-index:-1;
+  left:5%;
+}
+
+div.video_fadeOne {
+  position:relative;
+  float:left;
+  top:-50px;
+  z-index:-1;
+  left:5%;
+}
+
+div.video_grad {
+  top:0;
+  position:absolute;
+  width:95%;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  height:100px;
+  z-index:9999;
+}
 
 
 
