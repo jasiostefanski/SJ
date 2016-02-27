@@ -49,8 +49,10 @@ function setup() {
 function draw(){
   background(255,255,255);
   for (var i=0; i<img.length; i++){
+    push();
     img[i].circulate();
     img[i].display();
+    pop();
   }
 }
 
@@ -63,7 +65,6 @@ function Thing(){
   this.radius=random(100,250);
 
   this.circulate = function(){
-    push();
     translate(centerX,centerY);
     this.x = this.radius * cos(this.angle);
     this.y = this.radius * sin(this.angle);
@@ -74,7 +75,6 @@ function Thing(){
   this.display = function(){
     fill(255,255,0);
     rect(this.x,this.y,120,150);
-    pop();
   }
 }
 
