@@ -441,6 +441,10 @@ h1.flashing-2 {
   position:relative;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 /*------------------------------ DIAGRAMS -----------------------------------------*/
 
 html.someclass {
@@ -498,6 +502,12 @@ div.dia_text {
 
 #divine-king{
   position:absolute;
+}
+
+#cancan{
+  position:absolute;
+  left:45%;
+  top:-20%;
 }
  
 span.dia_dates {
