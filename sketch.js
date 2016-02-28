@@ -23,19 +23,19 @@ function setup() {
   img2 = loadImage("assets/323.jpg");
   
   for(i=0;i<10;i++){
-    x1speed[i]=18;
-    y1speed[i]=12;
-    
-    x2speed[i]=10;
-    y2speed[i]=18;
-    
-    if(i==0){
-      x1[i]=0;y1[i]=0;
-      x2[i]=0;y2[i]=0;
-    } else {
-      x1[i]=0-i*x1speed[i]; y1[i]=0-i*y1speed[i];
-      x2[i]=0-i*x2speed[i]; y2[i]=0-i*y2speed[i];
-    }
+  	x1speed[i]=18;
+  	y1speed[i]=12;
+  	
+  	x2speed[i]=10;
+  	y2speed[i]=18;
+  	
+  	if(i==0){
+  		x1[i]=0;y1[i]=0;
+  		x2[i]=0;y2[i]=0;
+  	} else {
+  		x1[i]=0-i*x1speed[i]; y1[i]=0-i*y1speed[i];
+  		x2[i]=0-i*x2speed[i]; y2[i]=0-i*y2speed[i];
+  	}
   }
 }
 // The statements in draw() are executed until the 
@@ -43,10 +43,10 @@ function setup() {
 // sequence and after the last line is read, the first 
 // line is executed again.
 function draw() { 
-  background(255,36,0,127);   // Set the background to red
+  background('#ff2400');   // Set the background to red
   move();
   for (i=0;i<10;i++){
-    imageMode(CENTER);
+  	imageMode(CENTER);
     image(img,x1[i],y1[i],300,450);
     image(img2,x2[i],y2[i],305,300);
     
